@@ -14,24 +14,14 @@
 
     </form>
 
-    <form class="mt-3" action="">
+    <form [formGroup]="solicitarForm" class="mt-3" action="">
 
         <div class="mb-3">
             <label for="inputType" class="form-label">Tipo de servicio</label>
-            <select class="form-select" id="inputType" required>
-              <option selected disabled value="">Elegir...</option>
-              <option value="electricidad">Electrico</option>
-              <option value="mecanica">Mecanico</option>
-              <option value="limpieza">Limpieza</option>
-              <option value="electronica">Electronica</option>
-              <option value="computacion">Computación</option>
-              <option value="programacion">Programación</option>
-              <option value="arquitectura">Arquitectura</option>
-              <option value="logistica">Logistica</option>
-              <option value="transporte">Transporte</option>
-              <option value="construccion">Construcción</option>
-              <option value="reparacion">Reparación</option>
-              <option value="belleza">Belleza</option>
+            <select  class="form-select" id="inputType" required>
+              <option value="">Elegir...</option>
+
+       
             </select>
         </div>
 

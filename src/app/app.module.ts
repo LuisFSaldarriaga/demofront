@@ -9,7 +9,7 @@ import { registerCliente } from './components/register/registerCliente.component
 import { registerHacedor } from './components/register/registerHacedor.component';
 import { consultHacedor } from './components/consults/consultHacedor.component';
 import { serviceSolicitar } from './components/services/serviceSolicitar.component';
-import { FormBuilder, FormGroup, Validators, ReactiveFormsModule, FormsModule} from '@angular/forms';
+import { FormGroup, ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
@@ -19,7 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     registerCliente,
     registerHacedor,
     consultHacedor,
-    serviceSolicitar,
+    serviceSolicitar
     
   ],
   imports: [
@@ -27,8 +27,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormGroup,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
