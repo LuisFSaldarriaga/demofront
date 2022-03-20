@@ -1,20 +1,20 @@
 <div class="row align-items-center m-lg-5 m-2">
 
-    <form class="mt-3 col" action="">
+    <form [formGroup]="hacedorConsultForm" class="mt-3 col" action="">
 
         <div class="mb-3">
             <label for="inputID" class="form-label">Id</label>
-            <input type="text" class="form-control" id="inputID" placeholder="Numero único de identificación">
+            <input formControlName="id" type="text" class="form-control" id="inputID" placeholder="Numero único de identificación">
         </div>
 
         <div class="mb-3">
             <label for="inputDocument" class="form-label">Documento</label>
-            <input type="text" class="form-control" id="inputDocument" placeholder="Cedula">
+            <input formControlName="document" type="text" class="form-control" id="inputDocument" placeholder="Cedula">
         </div>
 
         <div class="mb-3">
             <label for="inputEmail" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            <input formControlName="email" type="email" class="form-control" id="inputEmail" placeholder="Email">
         </div>
 
         <div class="mb-3 d-flex flex-fill justify-content-center">
